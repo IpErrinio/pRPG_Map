@@ -16,19 +16,11 @@
         placeholder="Wpisz nazwę dzielnicy..."
         oninput="searchDistrict()"
       />
-      <button onclick="startRecognition()">🎤</button>
-      <label for="language">Język:</label>
-      <select id="language">
-        <option value="pl-PL">Polski</option>
-        <option value="en-US">Angielski(alfa)</option>
-      </select>
       <div id="map"></div>
     </div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
-    <script src="js/speech_to_text.js"></script>
-    <script src="js/Levenshtein.js"></script>
     <script src="js/dzielnice.js"></script>
   </body>
 </html>
