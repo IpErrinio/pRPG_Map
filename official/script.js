@@ -1,3 +1,26 @@
+// Tworzenie mapy Leaflet z układem współrzędnych CRS Simple (dla obrazków)
+var map = L.map("map", {
+  crs: L.CRS.Simple, // Prosty CRS, bez geograficznych współrzędnych
+  minZoom: -1, // Dostosowanie zoomu
+  maxZoom: 1,
+  zoomControl: true,
+  maxBounds: [
+    [0, 0],
+    [1545, 1545],
+  ], // Granice mapy ustawione na rozmiar obrazu
+  maxBoundsViscosity: 1.0, // Zabezpiecza przed przesunięciem mapy poza granice
+});
+
+// Ustawienie granic mapy odpowiadających rozdzielczości obrazu (1545x1545 pikseli)
+var bounds = [
+  [0, 0],
+  [1545, 1545],
+]; // Granice obrazu to jego rzeczywiste rozmiary
+
+// Ustawienie obrazu mapy w pełnych wymiarach
+var image = L.imageOverlay("images/mapa_ctvrti.jpg", bounds).addTo(map);
+map.fitBounds(bounds); // Dopasowanie widoku mapy do obrazu
+
 // Funkcja do wyszukiwania dzielnic
 function searchDistrict() {
   var searchTerm = document.getElementById("search").value.toLowerCase();
@@ -40,29 +63,6 @@ function searchDistrict() {
     map.fitBounds(bounds);
   }
 }
-
-// Tworzenie mapy Leaflet z układem współrzędnych CRS Simple (dla obrazków)
-var map = L.map("map", {
-  crs: L.CRS.Simple, // Prosty CRS, bez geograficznych współrzędnych
-  minZoom: -1, // Dostosowanie zoomu
-  maxZoom: 1,
-  zoomControl: true,
-  maxBounds: [
-    [0, 0],
-    [1545, 1545],
-  ], // Granice mapy ustawione na rozmiar obrazu
-  maxBoundsViscosity: 1.0, // Zabezpiecza przed przesunięciem mapy poza granice
-});
-
-// Ustawienie granic mapy odpowiadających rozdzielczości obrazu (1545x1545 pikseli)
-var bounds = [
-  [0, 0],
-  [1545, 1545],
-]; // Granice obrazu to jego rzeczywiste rozmiary
-
-// Ustawienie obrazu mapy w pełnych wymiarach
-var image = L.imageOverlay("images/mapa_ctvrti.jpg", bounds).addTo(map);
-map.fitBounds(bounds); // Dopasowanie widoku mapy do obrazu
 
 // Funkcja przekształcająca piksele na współrzędne na mapie Leaflet
 function przeksztalcNaWspolrzedne(x, y) {
