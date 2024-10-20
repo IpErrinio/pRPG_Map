@@ -37,6 +37,11 @@ function searchDistrict() {
     return;
   }
 
+  // Wyszukaj jeśli użytkownik wpisze minimum 2 litery
+  if (searchTerm.length < 2) {
+    return;
+  }
+
   var foundMarkers = [];
   var bounds = L.latLngBounds(); // Tworzenie obiektu do zbierania granic
 
