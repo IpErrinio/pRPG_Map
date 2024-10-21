@@ -1,542 +1,569 @@
 var dzielnice = {
   // Los Santos
   "Los Santos Airport": {
-    koordynaty: przeksztalcNaWspolrzedne(1230, 125),
+    koordynaty: [125, 1230],
   },
   Commerce: {
-    koordynaty: przeksztalcNaWspolrzedne(1180, 380),
+    koordynaty: [380, 1180],
   },
   "Conference Center": {
-    koordynaty: przeksztalcNaWspolrzedne(1075, 310),
+    koordynaty: [310, 1075],
   },
   "Downtown Los Santos": {
-    koordynaty: przeksztalcNaWspolrzedne(1190, 440),
+    koordynaty: [440, 1190],
   },
   "East Beach": {
-    koordynaty: przeksztalcNaWspolrzedne(1490, 360),
+    koordynaty: [360, 1490],
   },
   "East Los Santos": {
-    koordynaty: przeksztalcNaWspolrzedne(1398, 410),
+    koordynaty: [410, 1398],
   },
   "El Corona": {
-    koordynaty: przeksztalcNaWspolrzedne(1245, 238),
+    koordynaty: [238, 1245],
   },
   Ganton: {
-    koordynaty: przeksztalcNaWspolrzedne(1400, 320),
+    koordynaty: [320, 1400],
   },
   "Glen Park": {
-    koordynaty: przeksztalcNaWspolrzedne(1270, 470),
+    koordynaty: [470, 1270],
   },
   Idlewood: {
-    koordynaty: przeksztalcNaWspolrzedne(1290, 345),
+    koordynaty: [345, 1290],
   },
   Jefferson: {
-    koordynaty: przeksztalcNaWspolrzedne(1330, 438),
+    koordynaty: [438, 1330],
   },
   "Las Colinas": {
-    koordynaty: przeksztalcNaWspolrzedne(1390, 510),
+    koordynaty: [510, 1390],
   },
   "Los Flores": {
-    koordynaty: przeksztalcNaWspolrzedne(1457, 440),
+    koordynaty: [440, 1457],
   },
   "Los Santos Inlet": {
-    koordynaty: przeksztalcNaWspolrzedne(1225, 313),
+    koordynaty: [313, 1225],
   },
   "Little Mexico": {
-    koordynaty: przeksztalcNaWspolrzedne(1225, 313),
+    koordynaty: [313, 1225],
   },
   Maryna: {
     //do naprawy
-    koordynaty: przeksztalcNaWspolrzedne(960, 350),
+    koordynaty: [350, 960],
   },
   Market: {
-    koordynaty: przeksztalcNaWspolrzedne(1060, 430),
+    koordynaty: [430, 1060],
   },
   Mulholland: {
-    koordynaty: przeksztalcNaWspolrzedne(1060, 565),
+    koordynaty: [565, 1060],
   },
   "Mulholland Intersection": {
-    koordynaty: przeksztalcNaWspolrzedne(1195, 540),
+    koordynaty: [540, 1195],
   },
   "Ocean Docs": {
-    koordynaty: przeksztalcNaWspolrzedne(1430, 170),
+    koordynaty: [170, 1430],
   },
   "Pershing Square": {
-    koordynaty: przeksztalcNaWspolrzedne(1160, 335),
+    koordynaty: [335, 1160],
   },
   "Playa del Seville": {
-    koordynaty: przeksztalcNaWspolrzedne(1500, 250),
+    koordynaty: [250, 1500],
   },
   Richman: {
-    koordynaty: przeksztalcNaWspolrzedne(875, 490),
+    koordynaty: [490, 875],
   },
   Rodeo: {
-    koordynaty: przeksztalcNaWspolrzedne(870, 380),
+    koordynaty: [380, 870],
   },
   "Santa Marina Beach": {
-    koordynaty: przeksztalcNaWspolrzedne(863, 280),
+    koordynaty: [280, 863],
   },
-  "Temple/Sunrise": {
-    koordynaty: przeksztalcNaWspolrzedne(1070, 500),
+  Temple: {
+    koordynaty: [500, 1070],
+  },
+  Sunrise: {
+    koordynaty: [500, 1070],
   },
   "Unity Station": {
-    koordynaty: przeksztalcNaWspolrzedne(1222, 265),
+    koordynaty: [265, 1222],
   },
   "Verona Beach": {
-    koordynaty: przeksztalcNaWspolrzedne(990, 280),
+    koordynaty: [280, 990],
   },
   Vinewood: {
-    koordynaty: przeksztalcNaWspolrzedne(980, 470),
+    koordynaty: [470, 980],
   },
   Willowfield: {
-    koordynaty: przeksztalcNaWspolrzedne(1380, 270),
+    koordynaty: [270, 1380],
   },
   "Verdant Bluffs": {
-    koordynaty: przeksztalcNaWspolrzedne(1125, 260),
+    koordynaty: [260, 1125],
   },
 
   // San Fierro
   "Battery Point": {
-    koordynaty: przeksztalcNaWspolrzedne(90, 1133),
+    koordynaty: [1133, 90],
   },
   "Calton Heights": {
-    koordynaty: przeksztalcNaWspolrzedne(292, 1145),
+    koordynaty: [1145, 292],
   },
   "China town": {
-    koordynaty: przeksztalcNaWspolrzedne(210, 945),
+    koordynaty: [945, 210],
   },
   "City Hall": {
-    koordynaty: przeksztalcNaWspolrzedne(68, 869),
+    koordynaty: [869, 68],
   },
   Doherty: {
-    koordynaty: przeksztalcNaWspolrzedne(258, 747),
+    koordynaty: [747, 258],
   },
   Downtown: {
-    koordynaty: przeksztalcNaWspolrzedne(308, 949),
+    koordynaty: [949, 308],
   },
   "Easter Basin": {
-    koordynaty: przeksztalcNaWspolrzedne(380, 889),
+    koordynaty: [889, 380],
   },
   "Easter Bay Airport": {
-    koordynaty: przeksztalcNaWspolrzedne(400, 711),
+    koordynaty: [711, 400],
   },
   "Esplanade East": {
-    koordynaty: przeksztalcNaWspolrzedne(392, 1073),
+    koordynaty: [1073, 392],
   },
   "Esplanade North": {
-    koordynaty: przeksztalcNaWspolrzedne(284, 1153),
+    koordynaty: [1153, 284],
   },
   Financial: {
-    koordynaty: przeksztalcNaWspolrzedne(312, 1035),
+    koordynaty: [1035, 312],
   },
   "Foster Valley": {
-    koordynaty: przeksztalcNaWspolrzedne(258, 591),
+    koordynaty: [591, 258],
   },
   Garcia: {
-    koordynaty: przeksztalcNaWspolrzedne(180, 797),
+    koordynaty: [797, 180],
   },
   "Garver Bridge": {
-    koordynaty: przeksztalcNaWspolrzedne(446, 1041),
+    koordynaty: [1041, 446],
   },
   Hashbury: {
-    koordynaty: przeksztalcNaWspolrzedne(124, 763),
+    koordynaty: [763, 124],
   },
   Paradiso: {
-    koordynaty: przeksztalcNaWspolrzedne(91, 1053),
+    koordynaty: [1053, 91],
   },
   "Juniper Hill": {
-    koordynaty: przeksztalcNaWspolrzedne(154, 991),
+    koordynaty: [991, 154],
   },
   "Juniper Hollow": {
-    koordynaty: przeksztalcNaWspolrzedne(154, 1092),
+    koordynaty: [1092, 154],
   },
   "Kincaid Bridge": {
-    koordynaty: przeksztalcNaWspolrzedne(473, 1002),
+    koordynaty: [1002, 473],
   },
   Kings: {
-    koordynaty: przeksztalcNaWspolrzedne(223, 891),
+    koordynaty: [891, 223],
   },
   "Ocean Flats": {
-    koordynaty: przeksztalcNaWspolrzedne(52, 798),
+    koordynaty: [798, 52],
   },
   Palisades: {
-    koordynaty: przeksztalcNaWspolrzedne(28, 1020),
+    koordynaty: [1020, 28],
   },
   Queens: {
-    koordynaty: przeksztalcNaWspolrzedne(146, 894),
+    koordynaty: [894, 146],
   },
   "Santa Flora": {
-    koordynaty: przeksztalcNaWspolrzedne(92, 955),
+    koordynaty: [955, 92],
   },
   "Cranberry Station": {
-    koordynaty: przeksztalcNaWspolrzedne(266, 825),
+    koordynaty: [825, 266],
   },
   "Avispa Country Club": {
-    koordynaty: przeksztalcNaWspolrzedne(118, 700),
+    koordynaty: [700, 118],
   },
   "Missionary Hill": {
-    koordynaty: przeksztalcNaWspolrzedne(107, 630),
+    koordynaty: [630, 107],
   },
   "Easter Tunnel": {
-    koordynaty: przeksztalcNaWspolrzedne(364, 571),
+    koordynaty: [571, 364],
   },
 
   // Las Venturas
   Blackfield: {
-    koordynaty: przeksztalcNaWspolrzedne(1052, 1157),
+    koordynaty: [1157, 1052],
   },
   "Blackfield College": {
-    koordynaty: przeksztalcNaWspolrzedne(1046, 1066),
+    koordynaty: [1066, 1046],
   },
   "Blackfield Chapel": {
-    koordynaty: przeksztalcNaWspolrzedne(1136, 972),
+    koordynaty: [972, 1136],
   },
   "Blackfield Intersection": {
-    koordynaty: przeksztalcNaWspolrzedne(1100, 1032),
+    koordynaty: [1032, 1100],
   },
   Creek: {
-    koordynaty: przeksztalcNaWspolrzedne(1502, 1376),
+    koordynaty: [1376, 1502],
   },
   "Julius Thruway East": {
-    koordynaty: przeksztalcNaWspolrzedne(1472, 1277),
+    koordynaty: [1277, 1472],
   },
   "Julius Thruway North": {
-    koordynaty: przeksztalcNaWspolrzedne(1370, 1451),
+    koordynaty: [1451, 1370],
   },
   "Julius Thruway West": {
-    koordynaty: przeksztalcNaWspolrzedne(1086, 1229),
+    koordynaty: [1229, 1086],
   },
   "Julius Thruway South": {
-    koordynaty: przeksztalcNaWspolrzedne(1306, 991),
+    koordynaty: [991, 1306],
   },
   "Las Venturas Airport": {
-    koordynaty: przeksztalcNaWspolrzedne(1168, 1183),
+    koordynaty: [1183, 1168],
   },
   "Redsands East": {
-    koordynaty: przeksztalcNaWspolrzedne(1280, 1334),
+    koordynaty: [1334, 1280],
   },
   "Redsands West": {
-    koordynaty: przeksztalcNaWspolrzedne(1166, 1340),
+    koordynaty: [1340, 1166],
   },
   "Rockshore East": {
-    koordynaty: przeksztalcNaWspolrzedne(1472, 1003),
+    koordynaty: [1003, 1472],
   },
   "Rockshore West": {
-    koordynaty: przeksztalcNaWspolrzedne(1346, 969),
+    koordynaty: [969, 1346],
   },
   "Spiny bed": {
-    koordynaty: przeksztalcNaWspolrzedne(1367, 1496),
+    koordynaty: [1496, 1367],
   },
   "The Strip": {
-    koordynaty: przeksztalcNaWspolrzedne(1302, 1127),
+    koordynaty: [1127, 1302],
   },
   "Yellow Bell Golf Club": {
-    koordynaty: przeksztalcNaWspolrzedne(1115, 1511),
+    koordynaty: [1511, 1115],
   },
   "Yellow Bell Station": {
-    koordynaty: przeksztalcNaWspolrzedne(1142, 1463),
+    koordynaty: [1463, 1142],
   },
   "Prickle Pine": {
-    koordynaty: przeksztalcNaWspolrzedne(1226, 1490),
+    koordynaty: [1490, 1226],
   },
   "KACC Military Fuels": {
-    koordynaty: przeksztalcNaWspolrzedne(1448, 1505),
+    koordynaty: [1505, 1448],
   },
   "Pilson Intersection": {
-    koordynaty: przeksztalcNaWspolrzedne(1087, 1405),
+    koordynaty: [1405, 1087],
   },
   "White Wood Estates": {
-    koordynaty: przeksztalcNaWspolrzedne(1040, 1322),
+    koordynaty: [1322, 1040],
   },
   "The Emerald Isle": {
-    koordynaty: przeksztalcNaWspolrzedne(1322, 1397),
+    koordynaty: [1397, 1322],
   },
   "Roca Escalante": {
-    koordynaty: przeksztalcNaWspolrzedne(1409, 1391),
+    koordynaty: [1391, 1409],
   },
   "Old Venturas Strip": {
-    koordynaty: przeksztalcNaWspolrzedne(1400, 1328),
+    koordynaty: [1328, 1400],
   },
   "The Visage": {
-    koordynaty: przeksztalcNaWspolrzedne(1276, 1275),
+    koordynaty: [1275, 1276],
   },
   "Harry Gold Parkway": {
-    koordynaty: przeksztalcNaWspolrzedne(1234, 1287),
+    koordynaty: [1287, 1234],
   },
   "Starfish Casino": {
-    koordynaty: przeksztalcNaWspolrzedne(1400, 1283),
+    koordynaty: [1283, 1400],
   },
   "The Clown's Pocket": {
-    koordynaty: przeksztalcNaWspolrzedne(1362, 1247),
+    koordynaty: [1247, 1362],
   },
   "Pirates In Men's Pants": {
-    koordynaty: przeksztalcNaWspolrzedne(1266, 1207),
+    koordynaty: [1207, 1266],
   },
   "Caligula's Palace": {
-    koordynaty: przeksztalcNaWspolrzedne(1362, 1221),
+    koordynaty: [1221, 1362],
   },
   Pilgrim: {
-    koordynaty: przeksztalcNaWspolrzedne(1432, 1189),
+    koordynaty: [1189, 1432],
   },
   "Sobell Rail Yards": {
-    koordynaty: przeksztalcNaWspolrzedne(1506, 1249),
+    koordynaty: [1249, 1506],
   },
   "The High Roller": {
-    koordynaty: przeksztalcNaWspolrzedne(1266, 1143),
+    koordynaty: [1143, 1266],
   },
   "Royal Casino": {
-    koordynaty: przeksztalcNaWspolrzedne(1354, 1157),
+    koordynaty: [1157, 1354],
   },
   "The Camel's Toe": {
-    koordynaty: przeksztalcNaWspolrzedne(1380, 1117),
+    koordynaty: [1117, 1380],
   },
   "The Pink Swan": {
-    koordynaty: przeksztalcNaWspolrzedne(1266, 1095),
+    koordynaty: [1095, 1266],
   },
   "Lva Freight Depot": {
-    koordynaty: przeksztalcNaWspolrzedne(1182, 1061),
+    koordynaty: [1061, 1182],
   },
   "Randolph Industrial Estate": {
-    koordynaty: przeksztalcNaWspolrzedne(1206, 981),
+    koordynaty: [981, 1206],
   },
   "Last Dime Motel": {
-    koordynaty: przeksztalcNaWspolrzedne(1262, 979),
+    koordynaty: [979, 1262],
   },
   "Four Dragons Casino": {
-    koordynaty: przeksztalcNaWspolrzedne(1270, 1047),
+    koordynaty: [1047, 1270],
   },
   "Come A Lot": {
-    koordynaty: przeksztalcNaWspolrzedne(1378, 1063),
+    koordynaty: [1063, 1378],
   },
   "Linden Side": {
-    koordynaty: przeksztalcNaWspolrzedne(1502, 1069),
+    koordynaty: [1069, 1502],
   },
   "Linden Station": {
-    koordynaty: przeksztalcNaWspolrzedne(1502, 1127),
+    koordynaty: [1127, 1502],
   },
 
   // Bone Country
   "Las Payasdas": {
-    koordynaty: przeksztalcNaWspolrzedne(707, 1481),
+    koordynaty: [1481, 707],
   },
   "Las Brujas": {
-    koordynaty: przeksztalcNaWspolrzedne(692, 1340),
+    koordynaty: [1340, 692],
   },
   "El Castillo Del Diablo": {
-    koordynaty: przeksztalcNaWspolrzedne(713, 1394),
+    koordynaty: [1394, 713],
   },
   "Verdant Meadow Aircraft Graveyard": {
-    koordynaty: przeksztalcNaWspolrzedne(830, 1445),
+    koordynaty: [1445, 830],
   },
-  "Restricted Area/No Fly Zone(Baza wojskowa)/Area 69": {
-    koordynaty: przeksztalcNaWspolrzedne(815, 1274),
+  "Restricted Area": {
+    koordynaty: [1274, 815],
+  },
+  "No Fly Zone": {
+    koordynaty: [1274, 815],
+  },
+  "Baza wojskowa": {
+    koordynaty: [1274, 815],
+  },
+  "Area 69": {
+    koordynaty: [1274, 815],
   },
   "Regular Tom": {
-    koordynaty: przeksztalcNaWspolrzedne(684, 1255),
+    koordynaty: [1255, 684],
   },
   "The Big Ear": {
-    koordynaty: przeksztalcNaWspolrzedne(698, 1183),
+    koordynaty: [1183, 698],
   },
   "Lil' Probe Inn": {
-    koordynaty: przeksztalcNaWspolrzedne(780, 1167),
+    koordynaty: [1167, 780],
   },
   "Green Palms": {
-    koordynaty: przeksztalcNaWspolrzedne(836, 1155),
+    koordynaty: [1155, 836],
   },
   "Octane Springs": {
-    koordynaty: przeksztalcNaWspolrzedne(898, 1159),
+    koordynaty: [1159, 898],
   },
-  "FC Fort Carson": {
-    koordynaty: przeksztalcNaWspolrzedne(742, 1051),
+  "Fort Carson": {
+    koordynaty: [1051, 742],
+  },
+  FC: {
+    koordynaty: [1051, 742],
   },
   "Hunter Quarry": {
-    koordynaty: przeksztalcNaWspolrzedne(928, 1015),
+    koordynaty: [1015, 928],
   },
 
   // Tierra Robada
   "Gant Bridge": {
-    koordynaty: przeksztalcNaWspolrzedne(80, 1265),
+    koordynaty: [1265, 80],
   },
   "San Fierro Bay": {
-    koordynaty: przeksztalcNaWspolrzedne(174, 1259),
+    koordynaty: [1259, 174],
   },
   Bayside: {
-    koordynaty: przeksztalcNaWspolrzedne(116, 1415),
+    koordynaty: [1415, 116],
   },
   "Bayside Marina": {
-    koordynaty: przeksztalcNaWspolrzedne(194, 1403),
+    koordynaty: [1403, 194],
   },
   "Bayside Tunnel": {
-    koordynaty: przeksztalcNaWspolrzedne(227, 1463),
+    koordynaty: [1463, 227],
   },
   "El Quebrados": {
-    koordynaty: przeksztalcNaWspolrzedne(383, 1475),
+    koordynaty: [1475, 383],
   },
   "Alda Malvada": {
-    koordynaty: przeksztalcNaWspolrzedne(431, 1451),
+    koordynaty: [1451, 431],
   },
   "Valle Ocultado": {
-    koordynaty: przeksztalcNaWspolrzedne(557, 1496),
+    koordynaty: [1496, 557],
   },
   "Arco Del Oeste": {
-    koordynaty: przeksztalcNaWspolrzedne(587, 1406),
+    koordynaty: [1406, 587],
   },
   "The Sherman Dam/Tama": {
-    koordynaty: przeksztalcNaWspolrzedne(587, 1310),
+    koordynaty: [1310, 587],
   },
   "Sherman Reservoir": {
-    koordynaty: przeksztalcNaWspolrzedne(590, 1256),
+    koordynaty: [1256, 590],
   },
   "Las Barrancas": {
-    koordynaty: przeksztalcNaWspolrzedne(562, 1181),
+    koordynaty: [1181, 562],
   },
   "Robada Intersection": {
-    koordynaty: przeksztalcNaWspolrzedne(514, 1115),
+    koordynaty: [1115, 514],
   },
 
   // Whetstone
-  "MC Mount Chiliad": {
-    koordynaty: przeksztalcNaWspolrzedne(134, 387),
+  "Mount Chiliad": {
+    koordynaty: [387, 134],
+  },
+  MC: {
+    koordynaty: [387, 134],
   },
   "Shady Creeks": {
-    koordynaty: przeksztalcNaWspolrzedne(366, 265),
+    koordynaty: [265, 366],
   },
   "Shady Cabin": {
-    koordynaty: przeksztalcNaWspolrzedne(355, 197),
+    koordynaty: [197, 355],
   },
-  "AP Angel Pine": {
-    koordynaty: przeksztalcNaWspolrzedne(218, 169),
+  "Angel Pine": {
+    koordynaty: [169, 218],
+  },
+  AP: {
+    koordynaty: [169, 218],
   },
 
   // Flint Country
   "The Farm": {
-    koordynaty: przeksztalcNaWspolrzedne(500, 523),
+    koordynaty: [523, 500],
   },
   "Beacon Hill": {
-    koordynaty: przeksztalcNaWspolrzedne(680, 520),
+    koordynaty: [520, 680],
   },
   "Flint Range": {
-    koordynaty: przeksztalcNaWspolrzedne(671, 415),
+    koordynaty: [415, 671],
   },
   "Flint Intersection": {
-    koordynaty: przeksztalcNaWspolrzedne(752, 422),
+    koordynaty: [422, 752],
   },
   "Leafy Hollow": {
-    koordynaty: przeksztalcNaWspolrzedne(518, 347),
+    koordynaty: [347, 518],
   },
   "Back O' Beyond": {
-    koordynaty: przeksztalcNaWspolrzedne(580, 209),
+    koordynaty: [209, 580],
   },
   "Los Santos Inlet": {
-    koordynaty: przeksztalcNaWspolrzedne(739, 284),
+    koordynaty: [284, 739],
   },
 
   // Red Country
   "Easter Bay Chemicals": {
-    koordynaty: przeksztalcNaWspolrzedne(503, 622),
+    koordynaty: [622, 503],
   },
   "Fallen Tree": {
-    koordynaty: przeksztalcNaWspolrzedne(612, 651),
+    koordynaty: [651, 612],
   },
   "Flint Waters": {
-    koordynaty: przeksztalcNaWspolrzedne(713, 640),
+    koordynaty: [640, 713],
   },
   "The Panopticon": {
-    koordynaty: przeksztalcNaWspolrzedne(608, 790),
+    koordynaty: [790, 608],
   },
-  "BB Blueberry Acres": {
-    koordynaty: przeksztalcNaWspolrzedne(746, 800),
+  "Blueberry Acres": {
+    koordynaty: [800, 746],
   },
-  "BB Blueberry": {
-    koordynaty: przeksztalcNaWspolrzedne(821, 707),
+  Blueberry: {
+    koordynaty: [707, 821],
+  },
+  BB: {
+    koordynaty: [707, 821],
   },
   "Martini Bridge": {
-    koordynaty: przeksztalcNaWspolrzedne(730, 887),
+    koordynaty: [887, 730],
   },
   "Fallow Bridge": {
-    koordynaty: przeksztalcNaWspolrzedne(904, 916),
+    koordynaty: [916, 904],
   },
   "Hampton Barns": {
-    koordynaty: przeksztalcNaWspolrzedne(949, 865),
+    koordynaty: [865, 949],
   },
   "Fern Ridge": {
-    koordynaty: przeksztalcNaWspolrzedne(1006, 782),
+    koordynaty: [782, 1006],
   },
   Dillimore: {
-    koordynaty: przeksztalcNaWspolrzedne(959, 646),
+    koordynaty: [646, 959],
   },
   "Hilltop Farms": {
-    koordynaty: przeksztalcNaWspolrzedne(1051, 706),
+    koordynaty: [706, 1051],
   },
   Montgomery: {
-    koordynaty: przeksztalcNaWspolrzedne(1103, 863),
+    koordynaty: [863, 1103],
   },
   "Montgomery Intersection": {
-    koordynaty: przeksztalcNaWspolrzedne(1192, 863),
+    koordynaty: [863, 1192],
   },
   "The Mako Span": {
-    koordynaty: przeksztalcNaWspolrzedne(1216, 920),
+    koordynaty: [920, 1216],
   },
   "Fisher's Lagoon": {
-    koordynaty: przeksztalcNaWspolrzedne(1292, 761),
+    koordynaty: [761, 1292],
   },
-  "PC Palomino Creek": {
-    koordynaty: przeksztalcNaWspolrzedne(1378, 797),
+  "Palomino Creek": {
+    koordynaty: [797, 1378],
+  },
+  PC: {
+    koordynaty: [797, 1378],
   },
   "San Andreas Sound": {
-    koordynaty: przeksztalcNaWspolrzedne(1442, 916),
+    koordynaty: [916, 1442],
   },
   "Hanky Panky Point": {
-    koordynaty: przeksztalcNaWspolrzedne(1460, 857),
+    koordynaty: [857, 1460],
   },
   "Northstar Rock": {
-    koordynaty: przeksztalcNaWspolrzedne(1423, 653),
+    koordynaty: [653, 1423],
   },
   "Frederick Bridge": {
-    koordynaty: przeksztalcNaWspolrzedne(1485, 891),
+    koordynaty: [891, 1485],
   },
 
   // Prace Dorywcze
   Magazyn: {
-    koordynaty: przeksztalcNaWspolrzedne(188, 1382),
+    koordynaty: [1382, 188],
   },
   Grzybki: {
-    koordynaty: przeksztalcNaWspolrzedne(664, 324),
+    koordynaty: [324, 664],
   },
   Drwal: {
-    koordynaty: przeksztalcNaWspolrzedne(641, 741),
+    koordynaty: [741, 641],
   },
   Kurier: {
-    koordynaty: przeksztalcNaWspolrzedne(1478, 154),
+    koordynaty: [154, 1478],
   },
   "Kopalnia/Kopka": {
-    koordynaty: przeksztalcNaWspolrzedne(572, 1158),
+    koordynaty: [1158, 572],
   },
   "Kosiarki SF": {
-    koordynaty: przeksztalcNaWspolrzedne(276, 1061),
+    koordynaty: [1061, 276],
   },
   "Kosiarki LS": {
-    koordynaty: przeksztalcNaWspolrzedne(1163, 222),
+    koordynaty: [222, 1163],
   },
   "Sweepers SF": {
-    koordynaty: przeksztalcNaWspolrzedne(196, 851),
+    koordynaty: [851, 196],
   },
   "Sweepers LV": {
-    koordynaty: przeksztalcNaWspolrzedne(1286, 1310),
+    koordynaty: [1310, 1286],
   },
   "Sweepers LS": {
-    koordynaty: przeksztalcNaWspolrzedne(1129, 351),
+    koordynaty: [351, 1129],
   },
   "Kutry LV": {
-    koordynaty: przeksztalcNaWspolrzedne(1369, 919),
+    koordynaty: [919, 1369],
   },
   "Kutry LS": {
-    koordynaty: przeksztalcNaWspolrzedne(1355, 151),
+    koordynaty: [151, 1355],
   },
   Rybak: {
-    koordynaty: przeksztalcNaWspolrzedne(869, 241),
+    koordynaty: [241, 869],
   },
   Dodo: {
-    koordynaty: przeksztalcNaWspolrzedne(1292, 190),
+    koordynaty: [190, 1292],
   },
 };
