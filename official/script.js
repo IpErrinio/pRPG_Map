@@ -68,38 +68,3 @@ function searchDistrict() {
     map.fitBounds(bounds);
   }
 }
-
-// Funkcja przekształcająca piksele na współrzędne na mapie Leaflet
-function przeksztalcNaWspolrzedne(x, y) {
-  return [y, x]; // Leaflet używa współrzędnych w odwróconej kolejności
-}
-
-// function searchDistrict() {
-//   var searchTerm = document.getElementById("search").value.toLowerCase();
-
-//   // Usuwanie istniejących markerów
-//   map.eachLayer(function (layer) {
-//     if (layer instanceof L.Marker) {
-//       map.removeLayer(layer);
-//     }
-//   });
-
-//   // Jeśli pole wyszukiwania jest puste, zakończ funkcję
-//   if (!searchTerm) {
-//     return;
-//   }
-
-//   var found = false;
-
-//   // Przeszukiwanie bazy dzielnic
-//   for (var dzielnica in dzielnice) {
-//     if (dzielnica.toLowerCase().includes(searchTerm.toLowerCase())) {
-//       var coords = dzielnice[dzielnica].koordynaty;
-
-//       // Dodanie markera w znalezionej dzielnicy
-//       L.marker(coords).addTo(map).bindPopup(`<b>${dzielnica}</b>`).openPopup();
-//       map.setView(coords, 0); // Zoom na znalezioną dzielnicę
-//       found = true;
-//     }
-//   }
-// }
