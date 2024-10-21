@@ -37,10 +37,8 @@ input {
 }
 
 .site-footer {
-  margin-top: auto;
-  background-color: #f1f1f1;
+  margin-top: 20px;
   text-align: center;
-  padding: 20px;
   font-size: 14px;
   color: #666;
 }
