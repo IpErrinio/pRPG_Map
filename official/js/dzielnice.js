@@ -97,6 +97,9 @@ var dzielnice = {
   "Verdant Bluffs": {
     koordynaty: [260, 1125],
   },
+  "Marktet Station": {
+    koordynaty: [425, 987],
+  },
 
   // San Fierro
   "Battery Point": {
