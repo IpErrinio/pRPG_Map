@@ -97,7 +97,7 @@ var dzielnice = {
   "Verdant Bluffs": {
     koordynaty: [260, 1125],
   },
-  "Marktet Station": {
+  "Market Station": {
     koordynaty: [425, 987],
   },
 
