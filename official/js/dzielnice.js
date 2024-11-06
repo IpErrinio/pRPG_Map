@@ -45,7 +45,7 @@ var dzielnice = {
   "Little Mexico": {
     koordynaty: [313, 1225],
   },
-  Maryna: {
+  Marina: {
     //do naprawy
     koordynaty: [350, 960],
   },
