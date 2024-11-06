@@ -1,7 +1,7 @@
 // Tworzenie mapy Leaflet z układem współrzędnych CRS Simple (dla obrazków)
 var map = L.map("map", {
   crs: L.CRS.Simple, // Prosty CRS, bez geograficznych współrzędnych
-  minZoom: -1, // Dostosowanie zoomu
+  minZoom: -1.6, // Dostosowanie zoomu
   maxZoom: 1,
   zoomControl: true,
   maxBounds: [
