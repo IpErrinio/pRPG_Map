@@ -47,7 +47,10 @@ function searchDistrict() {
 
   // Przeszukiwanie bazy dzielnic
   for (var dzielnica in dzielnice) {
-    if (dzielnica.toLowerCase().startsWith(searchTerm.toLowerCase())) {
+    var words = dzielnica.toLowerCase().split(" "); // Dzielenie na pojedyńcze słowa
+    var matches = words.some((word) => word.startsWith(searchTerm)); // Wyszukiwanie po wszystkich słowach
+
+      if (matches) {
       var coords = dzielnice[dzielnica].koordynaty;
 
       // Dodanie markera w znalezionej dzielnicy
