@@ -3,7 +3,7 @@ var map = L.map("map", {
   crs: L.CRS.Simple, // Prosty CRS, bez geograficznych współrzędnych
   minZoom: -1.6, // Dostosowanie zoomu
   maxZoom: 1,
-  zoomControl: true,
+  zoomControl: false,
   maxBounds: [
     [0, 0],
     [1545, 1545],
