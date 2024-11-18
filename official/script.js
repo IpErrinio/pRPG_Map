@@ -21,53 +21,63 @@ var bounds = [
 var image = L.imageOverlay("images/mapa_ctvrti.jpg", bounds).addTo(map);
 map.fitBounds(bounds); // Dopasowanie widoku mapy do obrazu
 
-// Funkcja do wyszukiwania dzielnic
 function searchDistrict() {
+  // Pobierz zapytanie użytkownika i zamień na małe litery dla porównania
   var searchTerm = document.getElementById("search").value.toLowerCase();
 
-  // Usuwanie istniejących markerów
+  // Usuń wszystkie istniejące markery z mapy, aby odświeżyć wyniki
   map.eachLayer(function (layer) {
     if (layer instanceof L.Marker) {
       map.removeLayer(layer);
     }
   });
 
-  // Jeśli pole wyszukiwania jest puste, zakończ funkcję
-  if (!searchTerm) {
+  // Jeśli zapytanie jest puste lub krótsze niż 2 znaki, zakończ funkcję
+  if (!searchTerm || searchTerm.length < 2) {
     return;
   }
 
-  // Wyszukaj jeśli użytkownik wpisze minimum 2 litery
-  if (searchTerm.length < 2) {
-    return;
-  }
+  var foundMarkers = []; // Tablica na znalezione markery
+  var bounds = L.latLngBounds(); // Zasięg, który zostanie dopasowany do wyników
 
-  var foundMarkers = [];
-  var bounds = L.latLngBounds(); // Tworzenie obiektu do zbierania granic
-
-  // Przeszukiwanie bazy dzielnic
+  // Iteruj przez obiekt `dzielnice`, gdzie klucze to nazwy dzielnic
   for (var dzielnica in dzielnice) {
-    var words = dzielnica.toLowerCase().split(" "); // Dzielenie na pojedyńcze słowa
-    var matches = words.some((word) => word.startsWith(searchTerm)); // Wyszukiwanie po wszystkich słowach
+    // Rozbij nazwę dzielnicy na słowa i przekształć na małe litery
+    var words = dzielnica.toLowerCase().split(" ");
 
-      if (matches) {
+    // Rozbij zapytanie na części (słowa) oddzielone spacjami
+    var searchTerms = searchTerm.split(" ");
+
+    // Sprawdź, czy każde słowo z zapytania pasuje do dowolnego słowa nazwy dzielnicy
+    var matches = searchTerms.every((term) =>
+      words.some((word) => word.startsWith(term))
+    );
+
+    // Jeśli zapytanie pasuje do nazwy dzielnicy
+    if (matches) {
+      // Pobierz współrzędne danej dzielnicy
       var coords = dzielnice[dzielnica].koordynaty;
 
-      // Dodanie markera w znalezionej dzielnicy
+      // Utwórz nowy marker na mapie, ustaw popup z nazwą dzielnicy i dodaj do mapy
       var marker = L.marker(coords)
         .addTo(map)
         .bindPopup(`<b>${dzielnica}</b>`)
         .openPopup();
-      foundMarkers.push(marker); // Dodanie markera do tablicy
-      bounds.extend(coords); // Dodanie koordynatów do granic
+
+      // Dodaj marker do tablicy wyników
+      foundMarkers.push(marker);
+
+      // Rozszerz zasięg mapy, aby uwzględnić ten marker
+      bounds.extend(coords);
     }
   }
 
+  // Jeśli znaleziono dokładnie jeden wynik, ustaw widok na ten marker
   if (foundMarkers.length === 1) {
-    map.setView(coords, 0);
-    // Jeśli jest tylko jeden wynik, zbliż na ten wynik
-  } else if (foundMarkers.length > 1) {
-    // Jeśli jest więcej wyników, wyśrodkuj mapę na wszystkie wyniki
+    map.setView(foundMarkers[0].getLatLng(), 12); // Powiększenie do poziomu 12
+  }
+  // Jeśli znaleziono więcej niż jeden wynik, dopasuj widok mapy do wszystkich wyników
+  else if (foundMarkers.length > 1) {
     map.fitBounds(bounds);
   }
 }
