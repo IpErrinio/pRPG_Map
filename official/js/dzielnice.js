@@ -245,7 +245,7 @@ var dzielnice = {
   "Prickle Pine": {
     koordynaty: [1490, 1226],
   },
-  "KACC Military Fuels": {
+  "K.A.C.C Military Fuels": {
     koordynaty: [1505, 1448],
   },
   "Pilson Intersection": {
