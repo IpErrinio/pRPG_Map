@@ -191,7 +191,7 @@ var dzielnice = {
   Blackfield: {
     koordynaty: [1157, 1052],
   },
-  "Blackfield College": {
+  "Blackfield/Greenglass College": {
     koordynaty: [1066, 1046],
   },
   "Blackfield Chapel": {
@@ -334,16 +334,16 @@ var dzielnice = {
   "Verdant Meadow Aircraft Graveyard": {
     koordynaty: [1445, 830],
   },
-  "Restricted Area": {
+  "Opuszczone Lotnisko": {
+    koordynaty: [1445, 830],
+  },
+  "Restricted Area 52": {
     koordynaty: [1274, 815],
   },
   "No Fly Zone": {
     koordynaty: [1274, 815],
   },
   "Baza wojskowa": {
-    koordynaty: [1274, 815],
-  },
-  "Area 69": {
     koordynaty: [1274, 815],
   },
   "Regular Tom": {
@@ -519,7 +519,7 @@ var dzielnice = {
   "Hanky Panky Point": {
     koordynaty: [857, 1460],
   },
-  "Northstar Rock": {
+  "Northstar Rock/North Rock": {
     koordynaty: [653, 1423],
   },
   "Frederick Bridge": {
@@ -568,5 +568,22 @@ var dzielnice = {
   },
   Dodo: {
     koordynaty: [190, 1292],
+  },
+
+  //Bazy Frakcyjne
+  "Baza SAPD": {
+    koordynaty: [1407, 1395],
+  },
+  "Baza SAMD": {
+    koordynaty: [344, 1055],
+  },
+  "Baza SAFD": {
+    koordynaty: [870, 55],
+  },
+  "Baza SATC": {
+    koordynaty: [351, 922],
+  },
+  "Baza SARA": {
+    koordynaty: [1110, 1498],
   },
 };
