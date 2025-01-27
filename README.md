@@ -1,1 +1,1 @@
-http://mapa.dawid.j.pl/
+http://mapaprpg.blu24.pl/
