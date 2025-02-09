@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obraz z koordynatami</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      #image-container {
+        position: relative;
+      }
+      #image {
+        width: 1545px;
+        height: 1545px;
+      }
+      #coordinates {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+      #copied-message {
+        color: green;
+        margin-top: 10px;
+        font-size: 16px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="image-container">
+      <img id="image" src="mapa_ctvrti.jpg" alt="Obraz" />
+    </div>
+    <div id="coordinates">Kliknij na obraz, aby zobaczyć koordynaty.</div>
+    <div id="copied-message">Koordynaty zostały skopiowane do schowka!</div>
+
+    <script>
+      const image = document.getElementById("image");
+      const coordinatesDiv = document.getElementById("coordinates");
+      const copiedMessage = document.getElementById("copied-message");
+
+      image.addEventListener("click", function (event) {
+        // Pobieranie rozmiarów obrazu i klikniętej pozycji
+        const rect = image.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = rect.bottom - event.clientY;
+
+        // Zaokrąglanie do najbliższej liczby całkowitej
+        const roundedX = Math.round(x);
+        const roundedY = Math.round(y);
+
+        // Tworzenie tekstu do kopiowania
+        const coordinatesText = `${roundedX}, ${roundedY}`;
+        coordinatesDiv.textContent = coordinatesText;
+
+        // Kopiowanie do schowka
+        navigator.clipboard
+          .writeText(coordinatesText)
+          .then(() => {
+            // Pokaż wiadomość, że zostało skopiowane
+            copiedMessage.style.display = "block";
+            setTimeout(() => {
+              copiedMessage.style.display = "none";
+            }, 1000); // Schowaj wiadomość po 1 sekundzie
+          })
+          .catch((err) => {
+            console.error("Błąd przy kopiowaniu do schowka: ", err);
+          });
+      });
+    </script>
+  </body>
+</html>
