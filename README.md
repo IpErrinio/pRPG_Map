@@ -1,1 +1,1 @@
-http://mapaprpg.blu24.pl/
+https://mapaprpg.blu24.pl/
