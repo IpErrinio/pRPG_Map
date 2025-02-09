@@ -2,7 +2,7 @@ https://mapaprpg.blu24.pl/
 
 
 Mapowanie_z_png
-[Tutaj mozemy dostac konkretne piksele, po kliknieciu
+[Tutaj mozemy dostac konkretne piksele po kliknieciu,
 Pomaga w mapowaniu]
 
 
